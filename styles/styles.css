@@ -1,0 +1,37 @@
+/* GENERAL */
+
+
+
+/* NAVBAR START */
+
+
+
+.navLogo{
+    object-fit: cover;
+    width: 75px;
+}
+
+/* NAVBAR END */
+
+/* HEROIMG START */
+
+.heroText{
+    background-color: #353535;
+    position: relative;
+    width: 520px;
+    top: -270px;
+    margin-bottom: -96px;
+}
+
+.heroUnder{
+    background-color: #1E2C20;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.heroContainer{
+    width: 0px;
+    height: 0px;
+}
+
+/* HEROIMG END */
