@@ -320,21 +320,18 @@ body, html {
     .hero-text {
         font-size: 1rem;
         padding: 2.5px;
-        color: red;
     }
 }
 @media screen and (max-width:600px) {
     .hero-text {
         font-size: .6rem;
         padding: 2px;
-        color: red;
     }
     
 }
 
 @media screen and (max-width:992px) {
     .heroUnder{
-        color: red;
         font-size: .8rem;
         padding-top: 15px;
         padding-bottom: 15px;
@@ -343,7 +340,6 @@ body, html {
 
 @media screen and (max-width:426px) {
     .heroUnder{
-        color: blue;
         font-size: .4rem;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -356,7 +352,6 @@ body, html {
 
 @media screen and (max-width:1024px) {
     .cook-h1{
-        color: red;
         font-size: 50px;
 
     }
@@ -370,7 +365,6 @@ body, html {
 
 @media screen and (max-width:768px) {
     .cook-h1{
-        color: blue;
         font-size: 40px;
 
     }
@@ -398,7 +392,6 @@ body, html {
 
 @media screen and (max-width:500px) {
     .cook-h1{
-        color: green;
         font-size: 25px;
         margin-top: 30px;
 
