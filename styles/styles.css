@@ -1,6 +1,11 @@
 /* GENERAL */
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
-
+body, html {
+    height: 100%;
+}
 
 /* NAVBAR START */
 
@@ -9,13 +14,18 @@
 .nav-logo{
     object-fit: cover;
     width: 75px;
+    margin: 10px 0px 15px 0px;
+}
+
+.nav-text{
+    margin: 10px;
 }
 
 /* NAVBAR END */
 
 /* HEROIMG START */
 
-.hero-grid{
+/* .hero-grid{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -43,6 +53,35 @@
     background-color: #1E2C20;
     padding-top: 20px;
     padding-bottom: 20px;
+} */
+
+
+.hero-image{
+    background-image: url(../assets/hero.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 75%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.599);
+    padding: 20px;
+    font-size: 2.5rem;
+  }
+
+  .heroUnder{
+    background-color: #1E2C20;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
 }
 
 /* HEROIMG END */
@@ -52,38 +91,39 @@
 .cook-grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 80px 1fr 1fr;
+    grid-template-rows: 1fr 100px;
     grid-column-gap: 30px;
     grid-row-gap: 10px;
+    margin: 50px 51.60px 0px 51.60px;
 }
 
-.cook-grid h1{
-    grid-row: 1;
-    grid-column: 2 / 4;
+.cook-h1{
     font-size: 60px;
-    margin-left: 200px;
+    text-align: center;
+    margin-top: 50px;
 }
 
 .cook-grid img{
-    grid-row: 2;
     object-fit: cover;
     aspect-ratio: 1 / 1;
     width: 100%;
+    height: 100%;
     border-radius: 10px;
 }
-.cook-grid h2{
-    grid-row: 3;
-}
 
-.cook-container{
-    margin-left: ;
-}
+/* .cook-grid h2{
+    grid-row: 2;
+} */
 
 /* Start Cooking END */
 
 /* New Arrivals START */
 
-
+.new-images{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
 
 
 
@@ -95,9 +135,20 @@
     border-radius: 10px;
     border: 1px solid #000000;
     padding: 24px;
+    margin: 30px 30px 60px 30px;
 }
 
+.best-card p{
+    line-height: 15px;
+    font-size: 12px;
+    margin-top: 20px;
+}
 
+.best-card img{
+    margin-bottom: 10px;
+    width: 100%;
+    height: 45%;
+}
 /* Best Sellers END */
 
 /* Reviews START */
@@ -107,7 +158,20 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 30px;
+    margin-right: 50px;
+    margin-left: 50px;
 
+}
+
+.review-grid p{
+    line-height: 15px;
+    font-size: 15px;
+}
+
+.review-grid h1{
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 15px;
 }
 
 .review-img1{
@@ -136,34 +200,474 @@
     border-radius: 10px;
     background-color: rgba(18, 18, 18, 0.60);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    height: 345px;
-    padding: 73px 28px;
+    height: 255px;
+    padding: 43px 28px;
+    
+
     grid-column: 1;
     grid-row: 1;
-    margin: 40px;
+    margin: 100px 40px 40px 40px;
     color: white;
 }
 .review-card2{
     border-radius: 10px;
     background-color: rgba(18, 18, 18, 0.60);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    height: 345px;
-    padding: 73px 28px;
+    height: 255px;
+    padding: 43px 28px;
+
     grid-column: 2;
     grid-row: 1;
+    margin: 100px 40px 40px 40px;
+    color: white;
 
 }
 .review-card3{
     border-radius: 10px;
     background-color: rgba(18, 18, 18, 0.60);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    height: 345px;
-    padding: 73px 28px;
+    height: 255px;
+    padding: 43px 28px;
+
     grid-column: 3;
     grid-row: 1;
+    margin: 100px 40px 40px 40px;
+    color: white;
 
 }
 
 
 
 /* Reviews END */
+
+/* Footer START */
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: 1fr 168.66px 168.66px 168.66px 1fr 255.93px 1fr;
+    grid-template-rows: 1fr;
+}
+
+.f-grid1{
+    grid-column: 2;
+}
+
+.f-grid2{
+    grid-column: 3;
+}
+
+.f-grid3{
+    grid-column: 4;
+}
+
+.f-grid4{
+    grid-column: 6;
+}
+
+
+
+.footer{
+    background-color: #1E2C20;
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: rgb(209, 209, 209);
+    font-weight: lighter;
+    line-height: 35px;
+}
+
+.footer b{
+    font-weight: 750;
+    color: white;
+}
+
+.footer p{
+    color: white;
+    font-size: 11px;
+}
+
+.footer-btn{
+    background-color: rgba(255, 228, 196, 0);
+    color: white;
+    border: .1px white solid;
+    width: 100px;
+}
+/* Footer END */
+
+
+
+/*------------------------------------- RESPONSIVENESS -------------------------------------*/
+
+/* HERO START */
+
+@media screen and (max-width:1024px) {
+    .hero-text {
+        font-size: 2rem;
+        padding: 15px;
+    }
+}
+@media screen and (max-width:992px) {
+    .hero-text {
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+}
+@media screen and (max-width:700px) {
+    .hero-text {
+        font-size: 1rem;
+        padding: 2.5px;
+        color: red;
+    }
+}
+@media screen and (max-width:600px) {
+    .hero-text {
+        font-size: .6rem;
+        padding: 2px;
+        color: red;
+    }
+    
+}
+
+@media screen and (max-width:992px) {
+    .heroUnder{
+        color: red;
+        font-size: .8rem;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+@media screen and (max-width:426px) {
+    .heroUnder{
+        color: blue;
+        font-size: .4rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+/* HERO END */
+
+/* Start Cooking START */
+
+@media screen and (max-width:1024px) {
+    .cook-h1{
+        color: red;
+        font-size: 50px;
+
+    }
+}
+
+@media screen and (max-width: 891px) {
+    .cook-grid h2{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .cook-h1{
+        color: blue;
+        font-size: 40px;
+
+    }
+
+    .cook-grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 50px 1fr 100px;
+    }
+
+    .cook-img1{
+        grid-row: 1;
+    }
+
+    .cook-img2{
+        grid-row: 1;
+    }
+
+    .cook-sm1{
+        grid-row: 2;
+    }
+    .cook-sm2{
+        grid-row: 2;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .cook-h1{
+        color: green;
+        font-size: 25px;
+        margin-top: 30px;
+
+    }
+
+    .cook-grid h2{
+        font-size: 15px;
+    }
+
+    .cook-grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 25px 1fr 50px;
+        margin: 20px 51.60px 0px 51.60px;
+
+    }
+    
+}
+
+/* Start Cooking END */
+
+/* New Arrivals START */
+
+@media screen and (max-width:1200px) {
+    .new-images{
+        height: 55%;
+    }
+
+    .new-text p{
+        font-size: 12px;
+    }
+
+    .new-text h1{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .new-images{
+        height: 300px;
+        max-height: 300px;
+        margin-top: 30px;
+    }
+    
+    .new-text{
+        margin-bottom: 90px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .new-images{
+        height: 200px;
+        max-height: 200px;
+        margin-top: 30px;
+    }
+
+  .new-text h1{
+        font-size: 20px;
+    }  
+
+  .new-text p{
+        font-size: 10px;
+    }  
+
+    .new-spacing{
+        margin-bottom: -50px;
+    }
+}
+
+/* New Arrivals END */
+
+/* Best Sellers START */
+
+@media screen and (max-width:1200px) {
+    .best-card{
+        margin: 0px 10px 30px 10px;
+    }
+
+    .best-spacing{
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .best-card img{
+        object-fit: cover;
+        height: 65%;
+    }
+    .best-card{
+        max-height: 550px;
+    }
+
+    .best-spacing{
+        margin-top: -70px;
+        margin-bottom: 20px;
+    }
+
+
+}
+
+@media screen and (max-width:531px) {
+    
+    .best-card img{
+        object-fit: cover;
+        height: 55%;
+    }
+
+}
+
+@media screen and (max-width:394px) {
+
+    .best-card img{
+        object-fit: cover;
+        height: 45%;
+    }
+
+}
+
+/* Best Sellers END */
+
+/* Reviews START */
+
+@media screen and (max-width:1274px) {
+
+    .review-grid h1{
+        font-size: 20px;
+    }
+
+    .review-grid p{
+        font-size: 13px;
+        line-height: 10px;
+    }
+}
+
+@media screen and (max-width:960px) {
+    
+    .review-grid h1{
+        font-size: 17px;
+    }
+
+    .review-grid p{
+        font-size: 12px;
+        line-height: 9px;
+    }
+
+    .review-grid h6{
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 867px) {
+
+    .review-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-row-gap: 30px;
+    }
+
+    .review-img1{
+        grid-row: 1;
+        grid-column: 1;
+    }
+    .review-img2{
+        grid-row: 2;
+        grid-column: 1;
+    }
+    .review-img3{
+        grid-row: 3;
+        grid-column: 1;
+    }
+    
+    .review-card1{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .review-card2{
+        grid-column: 1;
+        grid-row: 2;
+
+    }
+    .review-card3{
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .review-grid p{
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .review-grid h1{
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width:605px) {
+    .review-grid p{
+        font-size: 15px;
+        line-height: 15px;
+    }
+
+    .review-grid h1{
+        font-size: 23px;
+    }
+    
+}
+
+@media screen and (max-width:425px) {
+    .review-grid p{
+        font-size: 10px;
+        line-height: 10px;
+    }
+
+    .review-grid h1{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .review-grid p{
+        font-size: 8px;
+        line-height: 8px;
+    }
+
+    .review-grid h1{
+        font-size: 10px;
+    }
+}
+/* Reviews END */
+
+/* footer START */
+
+@media screen and (max-width:768px) {
+    
+    .footer-grid{
+        grid-template-columns: 10% 1fr 1fr 10%;
+        grid-template-rows: 25% 1fr 1fr;
+        grid-column-gap: 10px;
+        
+    }
+
+    .f-grid1{
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    .f-grid2{
+        grid-row: 2;
+        grid-column: 3;
+    }
+
+    .f-grid3{
+        grid-row: 3;
+        grid-column: 2;
+    }
+
+    .f-grid4{
+        grid-row: 1;
+        grid-column: 2/4;
+    }
+
+    .footer a{
+        font-size: 10px;
+    }
+}
+
+
+
+
+/* footer END */
