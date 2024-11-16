@@ -21,39 +21,11 @@ body, html {
     margin: 10px;
 }
 
+
 /* NAVBAR END */
 
 /* HEROIMG START */
 
-/* .hero-grid{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-}
-
-.hero-grid1{
-    grid-row: 1;
-    grid-column: 1;
-}
-
-.hero-grid2{
-    grid-row: 1;
-    grid-column: 1;
-}
-
-.hero-text{
-    background-color: #353535cf;
-    padding: 30px;
-    width: auto;
-    font-size: 35px;
-    margin: 650px 900px 0px 100px;
-}
-
-.heroUnder{
-    background-color: #1E2C20;
-    padding-top: 20px;
-    padding-bottom: 20px;
-} */
 
 
 .hero-image{
